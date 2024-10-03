@@ -1,0 +1,26 @@
+<template>
+    <lightning-card title="account information" icon-name="standard:account">
+        <div class="slds-p-around_small">
+           <lightning-record-form
+            
+            object-api-name={objectApiName}
+            columns="2"
+            mode="edit"
+            fields={fields}
+            onsuccess={handleSuccess}
+            >
+            </lightning-record-form>
+           <!-- <lightning-record-edit-form
+            record-id={recordId}
+            object-api-name={objectApiName}>
+            <lightning-output-field field-name="Name"></lightning-output-field>
+            <lightning-output-field field-name="Industry"></lightning-output-field>
+            <lightning-input-field field-name="Name"></lightning-input-field>
+            <lightning-input-field field-name="Industry"></lightning-input-field>
+            <lightning-input-field field-name="ParentId"></lightning-input-field>
+            <lightning-button type="submit" variant="brand" label="edit account"></lightning-button>
+        </lightning-record-edit-form>-->
+
+        </div>
+    </lightning-card>
+</template>

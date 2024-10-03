@@ -1,0 +1,11 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Data Binding dynamically using getter expression" icon-name="standard:account">
+        <p class="slds-p-horizontal_small">Hello, {uppercaseName}!</p>
+        <br/>
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-input type="text" name="firstname" label="First Name"  onchange={handlechange}></lightning-input>
+            <br/>
+            <lightning-input type="text"  name="Lastname" label="Last name"  onchange={handlechange}></lightning-input>
+        </div>
+    </lightning-card>
+</template>
